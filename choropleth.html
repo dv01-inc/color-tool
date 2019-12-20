@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Rainfall Choropleth Scale Generator</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <script src="js/jquery.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/jquery.fs.tipper.js"></script>
+    <script src="js/main.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h1>Rainfall Choropleth Scale Generator</h1>
+        <form>
+            <label for="color_classes_choro"># of classes</label>
+            <input type="range" min="5" max="13" value="13" id="color_classes_choro" name="color_classes_choro"/>
+            <span class="range-value">13</span>
+        </form>
+        <div id="rfe-choropleth" class="clearfix"></div>
+        <span class="notes">Click a swatch to copy its hex code as text. <a href="#">Or, generate a list.</a></span>
+    </div>
+</body>
+</html>
